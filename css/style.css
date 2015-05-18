@@ -2,6 +2,7 @@ html {
 	background-color: #f0f0f0;
 	width: 100%;
 	height: auto;
+	background-image: url(../img/skyscraper.jpg);
 }
 
 body {
@@ -24,14 +25,13 @@ p {
 	padding-top: 20px;
 }
 
-nav {
-	float: right;
-	display: inline-block;
-}
-
-
 h3 {
   padding-bottom: 20px;
+}
+
+li {
+  /* display: block; */
+  padding-top: 5px;
 }
 
 
@@ -49,12 +49,14 @@ h3 {
 }
 
 .portfolio {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	margin-top: 5%;
-	font-size: 4vw;
-	text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4vw;
+  text-transform: uppercase;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  width: 50%;
+  margin: 60% auto 0;
 }
 
 .contact a {
@@ -77,12 +79,8 @@ a:hover {
 
 /* MEDIA QUERIES */
 
-/* Mobile Portrait */
+/* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) { 
-		nav {
-  		display: none;
-	}
-
 	h1 {
 		font-size: 10vw;
 		position: fixed;
@@ -125,3 +123,88 @@ a:hover {
 		font-size: 2.25vw;
   	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) { 
+	html {
+		background: url(../img/seals.jpg) no-repeat bottom right fixed;
+  		-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+
+	h1 {
+		float: right;
+		color: #FA023C;
+	}
+
+	.content {
+	  	padding-top: 5%;
+	}
+
+	.content a {
+	  	background-color: #C9FFEB;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-content: space-around;
+		width: 100%;
+		position: fixed;
+		left: 0px;
+		bottom: 10px;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: landscape) { 
+	.content {
+	  	padding-top: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
