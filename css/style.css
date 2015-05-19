@@ -2,13 +2,13 @@ html {
 	background-color: #f0f0f0;
 	width: 100%;
 	height: auto;
-	background-image: url(../img/skyscraper.jpg);
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2vmax;
 	margin: 5%;
+	margin: 10%;
 }
 
 h1 {
@@ -17,46 +17,47 @@ h1 {
 	text-transform: uppercase;
 }
 
+/*
 p:first-of-type {
 	padding-top: 0px;
-}
+}*/
 
 p {
-	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: justify;
 }
+
+nav {
+	float: right;
+	display: inline-block;
+}
+
 
 h3 {
-  padding-bottom: 20px;
-}
-
-li {
-  /* display: block; */
-  padding-top: 5px;
+  	padding-bottom: 20px;
 }
 
 
 .content {
-	margin: 5% 0;
-	display: inline-block;
+	/*margin: 5% 0;*/
+	/*display: inline-block;*/
 	font-family: 'Lato', sans-serif; 
 	font-weight: 300;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	line-height: 125%;
 }
 
-.contact {
+/*.contact {
 	padding-top: 20px;
-}
+}*/
 
 .portfolio {
-  display: flex;
-  justify-content: space-between;
-  font-size: 4vw;
-  text-transform: uppercase;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
-  width: 50%;
-  margin: 60% auto 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-top: 5%;
+	font-size: 4vw;
+	text-transform: uppercase;
 }
 
 .contact a {
@@ -79,11 +80,15 @@ a:hover {
 
 /* MEDIA QUERIES */
 
-/* Mobile */
+/* Mobile Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) { 
+	nav {
+		display: none;
+	}
+
 	h1 {
 		font-size: 10vw;
-		position: fixed;
+		/*position: fixed;*/
 		bottom: 4%;
 		left: 0px;
 		text-align: center;
@@ -116,95 +121,10 @@ a:hover {
 }
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape) { 
-	h1 {
+	/* h1 {
 		display: none;
-	}
+	}*/
 	.content {
 		font-size: 2.25vw;
   	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet */
-@media only screen and (min-device-width: 768px) { 
-	html {
-		background: url(../img/seals.jpg) no-repeat bottom right fixed;
-  		-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	}
-
-	h1 {
-		float: right;
-		color: #FA023C;
-	}
-
-	.content {
-	  	padding-top: 5%;
-	}
-
-	.content a {
-	  	background-color: #C9FFEB;
-	}
-
-	ul {
-		display: flex;
-		justify-content: space-around;
-		align-content: space-around;
-		width: 100%;
-		position: fixed;
-		left: 0px;
-		bottom: 10px;
-	}
-}
-
-@media only screen and (min-device-width: 768px) and (orientation: landscape) { 
-	.content {
-	  	padding-top: 0;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
