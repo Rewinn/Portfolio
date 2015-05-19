@@ -1,67 +1,40 @@
 html {
 	background-color: #f0f0f0;
-	width: 100%;
-	height: auto;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2vmax;
-	margin: 5%;
-	margin: 10%;
+	margin: 5% 10%;
+	color: #394240;
 }
 
 h1 {
-	font-size: 6vw;
-	color: #00B4FF;
+	color: black;
+	font-size: 6vmax;
 	text-transform: uppercase;
+	text-align: center;
 }
 
-/*
+h2 {
+	padding-top: 10px; 
+	font-size: 2.5vmax;
+	text-align: center;
+}
+
 p:first-of-type {
-	padding-top: 0px;
-}*/
-
-p {
-	padding-bottom: 10px;
-	text-align: justify;
+	padding-bottom: 1em;
 }
 
-nav {
-	float: right;
-	display: inline-block;
+i {
+  	font-style: italic;
 }
-
-
-h3 {
-  	padding-bottom: 20px;
-}
-
 
 .content {
-	/*margin: 5% 0;*/
-	/*display: inline-block;*/
+	padding: 5% 0 0;
 	font-family: 'Lato', sans-serif; 
 	font-weight: 300;
-	/*padding-bottom: 10px;*/
 	line-height: 125%;
-}
-
-/*.contact {
-	padding-top: 20px;
-}*/
-
-.portfolio {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	margin-top: 5%;
-	font-size: 4vw;
-	text-transform: uppercase;
-}
-
-.contact a {
-	background-color: #FFF90C;
 }
 
 a:link {
@@ -74,57 +47,45 @@ a:visited {
 }
 
 a:hover {
-	color: #FF24A4;;
+	color: #1DEED1;
 }
+
+.portfolio {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+            justify-content: space-between;       
+    width: 50%;
+    margin: 100px auto 0;
+    border-top: 2px solid tomato;
+    border-bottom: 2px solid tomato;
+    padding: 5px 0;
+    }
+
 
 
 /* MEDIA QUERIES */
 
-/* Mobile Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) { 
-	nav {
-		display: none;
-	}
-
-	h1 {
-		font-size: 10vw;
-		/*position: fixed;*/
-		bottom: 4%;
-		left: 0px;
-		text-align: center;
-		width: 100%;
-		color: #545770;
-	}
-
-	h2 {
-		display: none;
-	}
-
-	img {
-  		display: none;
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+	body {
+		font-size: 2.75vmax;
 	}
 
 	.content {
-		font-family: Lato, sans-serif;
-		font-weight: 300;
-		font-size: 3vh;
-		line-height: 140%;
+  		padding-top: 10%;
+	}
+
+	.contact a {
+		background-color: #F8FE35;
 	}
 
 	.portfolio {
-		display: none;
-	}
-
-	.skills {
-	  	display: none;
+		margin-top: 10%;
 	}
 }
 
-@media only screen and (max-device-width: 767px) and (orientation: landscape) { 
-	/* h1 {
-		display: none;
-	}*/
-	.content {
-		font-size: 2.25vw;
-  	}
-} 
+
+
